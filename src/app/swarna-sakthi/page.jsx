@@ -3,6 +3,8 @@ import SwarnaSakthiSection1 from '../components/SwarnaSakthi/SwarnaSakthiSection
 import SwarnaSakthiSection2 from '../components/SwarnaSakthi/SwarnaSakthiSection2'
 import Footer from '../components/Footer/Footer'
 import Navbar from '../components/NavBar/NavBar'
+import Header from '../components/Header'
+import GoldPlans from './GoldPlans'
 
 
 
@@ -16,12 +18,14 @@ export const metadata = {
 
 const page = () => {
   return (
-    <main className='SwarnaSakthi'>
-      <Navbar/>
-      <SwarnaSakthiSection1/>
-      <SwarnaSakthiSection2/>
+    <div>
+      <Header/>
+      <main className='min-h-screen'>
+        <GoldPlans/>
+      </main>
+      
       <Footer/>
-    </main>
+    </div>
   )
 }
 
