@@ -56,13 +56,15 @@ export default function Home() {
                 </button>
               </div>
               <div className="flex justify-center items-center">
-                <Image
-                  width={151}
-                  height={73}
-                  className="h-16"
-                  src="/images/logo.svg"
-                  alt="image"
-                />
+                <Link href={"/"}>
+                  <Image
+                    width={151}
+                    height={73}
+                    className="h-16"
+                    src="/images/logo.svg"
+                    alt="image"
+                  />
+                </Link>
               </div>
               <div className="flex items-center justify-end gap-3">
                 <div>
@@ -171,13 +173,15 @@ export default function Home() {
             <div className="flex justify-between items-center py-3">
               <div className="flex gap-4 justify-start items-center">
                 <div>
-                  <Image
-                    width={76}
-                    height={62}
-                    className="h-12"
-                    src="/images/logo-main.svg"
-                    alt="image"
-                  />
+                  <Link href={"/"}>
+                    <Image
+                      width={76}
+                      height={62}
+                      className="h-12"
+                      src="/images/logo-main.svg"
+                      alt="image"
+                    />
+                  </Link>
                 </div>
 
                 <nav className="flex gap-4">
@@ -195,19 +199,19 @@ export default function Home() {
                   </Link>
                   <Link
                     className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] balthazar"
-                    href="#"
+                    href="/swarna-sakthi"
                   >
                     SS - Gold Scheme
                   </Link>
                   <Link
                     className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] balthazar"
-                    href="#"
+                    href="/careers"
                   >
                     Careers
                   </Link>
                   <Link
                     className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] balthazar"
-                    href="#"
+                    href="/contact-us"
                   >
                     contact us
                   </Link>
@@ -219,13 +223,13 @@ export default function Home() {
                 </div>
                 <Link
                   className="text-black !no-underline uppercase text-lg border border-black rounded-xs px-3 py-1 hover:bg-[#AD5389] balthazar hover:!border-[#AD5389] hover:!text-white"
-                  href="#"
+                  href="/zilara"
                 >
                   Zilara
                 </Link>
                 <Link
                   className="text-black !no-underline uppercase text-lg border border-black rounded-xs px-3 py-1 hover:bg-[#AD5389] balthazar hover:!border-[#AD5389] hover:!text-white"
-                  href="#"
+                  href="/florencia"
                 >
                   Florencia
                 </Link>
@@ -808,7 +812,7 @@ export default function Home() {
                 alt="banner"
               />
             </div>
-            <div className="bg-[#F2EDE4] p-12 flex items-center justify-center">
+            <div className="bg-[#F2EDE4] py-16 px-10 flex items-center justify-center">
               <div>
                 <Image
                   height={400}
@@ -818,19 +822,41 @@ export default function Home() {
                   alt="banner"
                 />
                 <div className="mt-4 flex flex-wrap justify-center gap-2">
-                  <Link href="#" className="button-dark">
-                    Explore collections
-                  </Link>
-                  <Link href="#" className="button-dark">
-                    Explore collections
-                  </Link>
+                  <div>
+                    <a
+                      target="__blank"
+                      href="https://apps.apple.com/in/app/jewelone/id1507128724"
+                    >
+                      <Image
+                        className="img-fluid"
+                        width="136"
+                        height="44"
+                        src="/app-store.webp"
+                        alt="logo"
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      target="__blank"
+                      href="https://play.google.com/store/apps/details?id=com.jewelone.winchit&hl=en&gl=US"
+                    >
+                      <Image
+                        className="img-fluid"
+                        width="136"
+                        height="44"
+                        src="/google-play.webp"
+                        alt="logo"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }
