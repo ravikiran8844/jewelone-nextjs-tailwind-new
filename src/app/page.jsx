@@ -339,7 +339,16 @@ export default function Home() {
       </header>
 
       <div className="min-h-screen">
-        {/* <MainBanner/> */}
+      <section>
+        <Link href="#">
+        <picture>
+          <source media="(min-width: 768px)" srcSet="/home/section1/desktop_banner.webp" />
+          <source media="(max-width: 768px)" srcSet="/home/section1/mobile_banner.webp" />
+          <img src="/home/section1/desktop_banner.webp" width={1921} height={1013} className="w-full" alt="Main Banner" />
+        </picture>
+        </Link>
+      </section>
+
         <section className="max-lg:bg-[#E0DACF] lg:bg-[#F2EDE4] py-10">
           <div className="container">
             <div className="flex flex-col justify-center items-center max-lg:text-center gap-4 lg:flex-row lg:justify-between lg:text-start lg:px-8">
