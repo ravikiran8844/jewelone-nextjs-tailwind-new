@@ -3,17 +3,18 @@ import Link from 'next/link'
 import React from 'react'
 import MobileMenu from './MobileMenu'
 
-const Header = () => {
-  return (
-    <>
-    <section className="bg-[#964A26] py-2 text-sm md:text-base">
+const Header = ({ params }) => {
+    const bg = params?.bg || 'bg-white'; // Fallback to 'bg-white' if not provided
+    return (
+      <>
+        <section className="bg-[#964A26] py-2 text-sm md:text-base">
         <div className="container">
           <div className="text-[#F2EDE4] text-center">
             50% OFF on Making Charges on Silver Jewellery!
           </div>
         </div>
       </section>
-    <header className="bg-[#F2EDE4] shadow-sm">
+            <header className={`${bg} shadow-sm sticky top-0`}>
         <div className="container">
           <div className="xl:hidden">
             <div className="grid grid-cols-3 py-2 items-center ">

@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Footer from "./components/Footer/Footer";
-import Navbar from "./components/NavBar/NavBar";
 import Link from "next/link";
-import { MainBanner } from "./components/Home/MainBanner/MainBanner";
 import Header from "./components/Header";
 
 export const metadata = {
@@ -17,7 +15,7 @@ export default function Home() {
       
       {/* <Navbar /> */}
 
-      <Header/>
+      <Header params={{ bg: 'bg-[#F2EDE4]' }}  />
 
       <div className="min-h-screen">
       <section>
