@@ -7,17 +7,17 @@ const Plan2 = () => {
     <div>
          <section className="swarna-sakthi-plan-header">
         <div className="col-12 px-4 text-center">
-          <div className="h6 py-3 text-red fw-bold">
+          <div className="py-8 !text-[#964A26] uppercase font-semibold text-lg md:text-xl">
           One -Time Lump-Sum Advance Plan (Tenure: 330 Days)
           </div>
         </div>
       </section>
 
       <section className="swarna-sakthi-plan-content">
-        <div className="container pb-5 py-md-5">
-          <div className="row bg-red">
+        <div className="container pb-5">
+          <div className="row bg-[#F2EDE4]">
             <div className="col-12 col-lg-5 col-xl-4 order-1 order-lg-0 p-4 m-auto">
-              <div className="text-white">
+              <div className="text-black text-md: lg:text-base">
               In this plan, Customers can order their choice of Jewellery by paying a one-time lump-sum as advance. After 330 days, the customer will receive Jewellery equivalent to His/Her ordered value.
               </div>
             </div>
@@ -32,7 +32,7 @@ const Plan2 = () => {
             </div>
           </div>
 
-          <div className="col-12 my-5 plan-terms">Terms & Conditions</div>
+          <div className="col-12 my-8 plan-terms">Terms & Conditions</div>
 
           <div className="row">
             <div className="col-12 col-lg-6">
@@ -99,7 +99,7 @@ const Plan2 = () => {
 
      
      
-      <section  className='bg-white'>
+      <section  className='bg-[#F2EDE4]s'>
         <div className="container py-5">
           <div className="col-12 col-lg-10 m-auto">
             <div className="table-responsive">

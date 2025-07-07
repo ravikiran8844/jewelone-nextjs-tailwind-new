@@ -89,7 +89,7 @@ const MobileMenu = () => {
         </div>
 
         {/* Links */}
-        <nav className="flex flex-col gap-2 px-4 py-6 text-lg font-medium divide-y divide-gray-200">
+        <nav className="flex flex-col gap-2 px-4 py-6 text-lg font-medium divide-y divide-[#D4D4D4]">
       {/* Main Links */}
       {[
         { href: "/our-story", label: "Our Story" },

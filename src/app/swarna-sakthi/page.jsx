@@ -7,6 +7,7 @@ import GoldPlans from "./GoldPlans";
 import Image from "next/image";
 import Link from "next/link";
 
+
 export const metadata = {
   title: "Swarna Sakthi Gold Purchase Plan - Jewel One",
   description:
@@ -17,7 +18,7 @@ const page = () => {
   return (
     <div>
       <Header />
-      <main className="min-h-screen">
+      <main className="min-h-screen SwarnaSakthi">
         <section>
           <div className="grid md:grid-cols-[55%_45%]">
             <div>
@@ -92,7 +93,8 @@ const page = () => {
             </div>
           </div>
         </section>
-        <GoldPlans />
+        <SwarnaSakthiSection2/>
+        {/* <GoldPlans /> */}
       </main>
 
       <Footer />

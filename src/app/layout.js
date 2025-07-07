@@ -38,8 +38,8 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${great_vibes.variable}`}>
+    <html lang="en" >
+      <body suppressHydrationWarning  className={`${inter.variable} ${great_vibes.variable}  pelita-grande-font`}>
         {/* <Navbar/> */}
         {children}
         {/* <Footer/> */}

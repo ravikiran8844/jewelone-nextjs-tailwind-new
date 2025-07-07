@@ -179,31 +179,31 @@ const Header = ({ params }) => {
 
                 <nav className="flex gap-4">
                   <Link
-                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] "
+                    className="text-black !no-underline  uppercase hover:!text-[#964A26] "
                     href="#"
                   >
                     our story
                   </Link>
                   <Link
-                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] "
+                    className="text-black !no-underline  uppercase hover:!text-[#964A26] "
                     href="#"
                   >
                     Collections
                   </Link>
                   <Link
-                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] "
+                    className="text-black !no-underline  uppercase hover:!text-[#964A26] "
                     href="/swarna-sakthi"
                   >
                     SS - Gold Scheme
                   </Link>
                   <Link
-                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] "
+                    className="text-black !no-underline  uppercase hover:!text-[#964A26] "
                     href="/careers"
                   >
                     Careers
                   </Link>
                   <Link
-                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] "
+                    className="text-black !no-underline  uppercase hover:!text-[#964A26] "
                     href="/contact-us"
                   >
                     contact us
@@ -211,15 +211,15 @@ const Header = ({ params }) => {
                 </nav>
               </div>
               <div className="flex items-center justify-end gap-3">
-                <div className="text-black  uppercase text-lg">our brands</div>
+                <div className="text-black  uppercase ">our brands</div>
                 <Link
-                  className="text-black !no-underline uppercase text-lg border border-black rounded-xs px-3 py-1 hover:bg-[#AD5389]  hover:!border-[#AD5389] hover:!text-white"
+                  className="text-black !no-underline uppercase  border border-black rounded-xs px-3 py-1 hover:bg-[#AD5389]  hover:!border-[#AD5389] hover:!text-white"
                   href="/zilara"
                 >
                   Zilara
                 </Link>
                 <Link
-                  className="text-black !no-underline uppercase text-lg border border-black rounded-xs px-3 py-1 hover:bg-[#AD5389]  hover:!border-[#AD5389] hover:!text-white"
+                  className="text-black !no-underline uppercase  border border-black rounded-xs px-3 py-1 hover:bg-[#AD5389]  hover:!border-[#AD5389] hover:!text-white"
                   href="/florencia"
                 >
                   Florencia
