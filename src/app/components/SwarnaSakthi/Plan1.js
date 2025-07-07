@@ -16,7 +16,7 @@ const Plan1 = () => {
         <div className="container pb-5">
           <div className="row bg-[#F2EDE4]">
             <div className="col-12 col-lg-5 col-xl-4 order-1 order-lg-0 p-4 m-auto">
-              <div className="h2 text-[#964A26]">Grammage Accumulation</div>
+              <div className="text-2xl lg:text-3xl font-medium text-[#964A26] mb-2">Grammage Accumulation</div>
               <div className="text-black text-md: lg:text-base">
                 A customer can select any Jewellery design of Her/His choice and
                 place an order. Customer can pay the estimated order value in

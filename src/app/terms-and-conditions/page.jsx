@@ -3,6 +3,7 @@ import Navbar from "../components/NavBar/NavBar";
 import Footer from "../components/Footer/Footer";
 import "../privacy-policy/privacy-policy.css";
 import Link from "next/link";
+import Header from "../components/Header";
 
 export const metadata = {
   title: "Terms and Conditions - JewelOne",
@@ -12,7 +13,7 @@ export const metadata = {
 const page = () => {
   return (
     <main className="privacy-policy">
-      <Navbar />
+      <Header/>
       <section className="container py-5">
         <div className="tab-content">
           <h1>

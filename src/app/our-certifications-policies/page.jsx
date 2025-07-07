@@ -4,6 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import './certifications.css'
 import Certificates from './Certificates'
+import Header from '../components/Header'
 
 
 
@@ -15,7 +16,8 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-        <Navbar/>
+        {/* <Navbar/> */}
+        <Header/>
         <main className='cerifications'>
           <section>
             <div className='position-relative'>

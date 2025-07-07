@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/NavBar/NavBar'
 import Footer from '../components/Footer/Footer'
 import './privacy-policy.css'
+import Header from '../components/Header'
 
 
 export const metadata = {
@@ -13,7 +14,8 @@ export const metadata = {
 const page = () => {
   return (
     <main className='privacy-policy'>
-        <Navbar/>
+        {/* <Navbar/> */}
+        <Header/>
     <section className="container py-5">
     <div className="tab-content">
       <h1>Privacy Policy</h1>

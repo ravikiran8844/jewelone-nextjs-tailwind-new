@@ -6,6 +6,7 @@ import CareersPageSection1 from "./CareersPageSection1";
 import './careers.css'
 import { ToastContainer } from "react-toastify";
 import CareersPageSection3 from "./CareersPageSection3";
+import Header from "../components/Header";
 
 
 export const metadata = {
@@ -17,7 +18,8 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Header/>
       <main className="careers-page">
         <CareersPageSection1/>
         <CareersPageSection2/>

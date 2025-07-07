@@ -5,6 +5,7 @@ import CollectionBanner from './CollectionBanner'
 import CollectionGrid from './CollectionGrid'
 import './collections.css'
 import { ToastContainer } from 'react-toastify'
+import Header from '../components/Header'
 
 export const metadata = {
   title: "Explore Exquisite Jewelry Collections | JewelOne",
@@ -24,7 +25,8 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-        <Navbar/>
+        {/* <Navbar/> */}
+        <Header/>
         <main>
             <CollectionBanner/>
             <CollectionGrid/>

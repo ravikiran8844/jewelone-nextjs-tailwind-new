@@ -2,12 +2,13 @@
 import Link from 'next/link'
 import Navbar from './components/NavBar/NavBar'
 import Footer from './components/Footer/Footer'
+import Header from './components/Header'
  
 export default function NotFound() {
   return (
     <main className='bg-white'>
-        <Navbar/>
-      
+        {/* <Navbar/> */}
+      <Header/>
         <section className="py-3 py-md-5 min-vh-100 d-flex justify-content-center align-items-center">
       <div className="container">
         <div className="row">

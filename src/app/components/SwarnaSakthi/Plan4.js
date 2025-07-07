@@ -267,7 +267,7 @@ const Plan4 = () => {
 
         <section className="container py-5">
           <div className="col-12 mb-4">
-            <div className="plan-terms_title">General Terms</div>
+            <div className="plan-terms_title !text-[#964A26] uppercase">General Terms</div>
           </div>
           <div className="row general-terms">
             <div className="col-12 col-lg-6">

@@ -6,6 +6,7 @@ import OurStorySection5 from "../components/OurStory/OurStorySection5";
 import OurStorySection4 from "../components/OurStory/OurStorySection4";
 import Navbar from "../components/NavBar/NavBar";
 import Footer from "../components/Footer/Footer";
+import Header from "../components/Header";
 
 export const metadata = {
   title: "Our Story - JewelOne",
@@ -14,7 +15,8 @@ export const metadata = {
 const page = () => {
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Header/>
       <OurStorySection1 />
       <OurStorySection2 />
       <OurStorySection3 />

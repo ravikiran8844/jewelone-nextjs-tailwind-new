@@ -5,6 +5,7 @@ import ContactSection3 from '../components/Contact/ContactSection3'
 import Footer from '../components/Footer/Footer'
 import Navbar from '../components/NavBar/NavBar'
 import { ToastContainer } from 'react-toastify'
+import Header from '../components/Header'
 
 
 export const metadata = {
@@ -16,7 +17,8 @@ export const metadata = {
 const page = () => {
   return (
     <main>
-      <Navbar/>
+      {/* <Navbar/> */}
+      <Header/>
       <ContactSection1/>
       {/* <ContactSection2/> */}
       <ContactSection3/>
