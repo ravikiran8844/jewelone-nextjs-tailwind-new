@@ -27,12 +27,12 @@ const Plan2 = () => {
                 className="img-fluid"
                 width={1100}
                 height={521}
-                src="/plan2-banner.webp"
+                src="/swarna-sakthi/plan2-banner.webp"
               />
             </div>
           </div>
 
-          <div className="col-12 my-8 plan-terms">Terms & Conditions</div>
+          <div className="col-12 my-8 plan-terms font-semibold">Terms & Conditions</div>
 
           <div className="row">
             <div className="col-12 col-lg-6">

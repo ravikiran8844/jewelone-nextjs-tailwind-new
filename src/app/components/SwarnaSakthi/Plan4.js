@@ -30,12 +30,12 @@ const Plan4 = () => {
                   className="img-fluid"
                   width={1100}
                   height={521}
-                  src="/plan4-banner.webp"
+                  src="/swarna-sakthi/plan4-banner.webp"
                 />
               </div>
             </div>
 
-            <div className="col-12 my-8 plan-terms">Terms & Conditions</div>
+            <div className="col-12 my-8 plan-terms font-semibold">Terms & Conditions</div>
 
             <div className="row">
               <div className="col-12 col-lg-6">
@@ -219,27 +219,33 @@ const Plan4 = () => {
         </section>
 
         <section
-          className="wedding-jewelry-section"
-          style={{
-            backgroundImage: "url('/swarna-sakthi/bg.webp')",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
+          className="wedding-jewelry-section bg-white"
+          
         >
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-7 py-5">
-                <div className="display-4 plan4-banner-section__title mb-2">
+          <div className="container pt-16">
+            <div className="row bg-[#F2EDE4]">
+            <div className="col-12 col-md-5 px-0">
+                <Image
+                  alt="banner"
+                  className="w-full object-cover h-full"
+                  width={400}
+                  height={510}
+                  src="/swarna-sakthi/banner.webp"
+                />
+              </div>
+              <div className="col-12 col-md-7">
+                <div className="py-6 md:px-6 flex flex-col justify-center h-full">
+                <div className="text-3xl lg:text-5xl font-bold plan4-banner-section__title mb-2">
                   A Golden <br />
                   Future Awaits
                 </div>
-                <div className="fs-3 mb-2  plan4-banner-section__sub-title">
+                <div className="text-xl lg:text-3xl mb-2  plan4-banner-section__sub-title">
                   Start Your Journey Now!
                 </div>
-                <div className="text-red fs-6 mb-2 fw-medium fst-italic">
+                <div className="text-red text-base mb-2 fw-medium fst-italic">
                   Non-Redemption on Maturity
                 </div>
-                <div className="mb-4">
+                <div className="mb-4 text-base">
                   If the customer does not purchase Jewellery at the end of 330
                   days from the date of enrollment and grace period of 10 days
                   given by the company from the maturity of scheme, then the
@@ -251,16 +257,10 @@ const Plan4 = () => {
                   22.220 (approx.) grams of 22k gold coin).
                 </div>
                 <div>GST will be charged extra as per government norms.</div>
+                </div>
+    
               </div>
-              <div className="col-12 col-md-5 pb-5">
-                <Image
-                  alt="chain"
-                  className="img-fluid"
-                  width={400}
-                  height={510}
-                  src="/swarna-sakthi/chain.webp"
-                />
-              </div>
+            
             </div>
           </div>
         </section>
