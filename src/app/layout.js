@@ -24,12 +24,12 @@ const great_vibes = Great_Vibes({
   variable: "--font-great-vibes",
 });
 
-const balthazar = Balthazar({
-  subsets: ["latin"],
-  weight: "400",
-  display: "swap",
-  variable: "--font-balthazar",
-});
+// const balthazar = Balthazar({
+//   subsets: ["latin"],
+//   weight: "400",
+//   display: "swap",
+//   variable: "--font-balthazar",
+// });
 
 export const metadata = {
   title: "JewelOne",
@@ -39,7 +39,7 @@ export const metadata = {
 export default async function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${great_vibes.variable} ${balthazar.variable}`}>
+      <body className={`${inter.variable} ${great_vibes.variable}`}>
         {/* <Navbar/> */}
         {children}
         {/* <Footer/> */}

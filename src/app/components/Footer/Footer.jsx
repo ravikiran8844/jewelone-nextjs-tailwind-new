@@ -99,7 +99,7 @@ const Footer = () => {
               </FooterAccordion>
 
               <div>
-                <div className="balthazar text-lg uppercase max-md:text-center md:text-start font-medium text-black">
+                <div className=" text-lg uppercase max-md:text-center md:text-start font-medium text-black">
                   Swarna Sakthi App
                 </div>
 

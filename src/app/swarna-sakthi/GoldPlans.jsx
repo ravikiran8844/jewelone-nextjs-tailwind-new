@@ -166,13 +166,13 @@ const GoldPlans = () => {
   return (
     <div>
       {/* Tabs */}
-      <div className="sticky top-20 ease-in-out duration-300 plans-sticky-menu">
+      <div className="sticky z-2 top-20 ease-in-out duration-300 plans-sticky-menu">
       <div className="flex py-2 bg-[#E0DACF] justify-center space-x-4 border-b border-gray-300 mb-8">
         {plans.map((plan, index) => (
           <button
             key={index}
             onClick={() => setSelectedTab(index)}
-            className={`px-6 py-2 font-medium uppercase balthazar ${
+            className={`px-6 py-2 font-medium uppercase  ${
               selectedTab === index
                 ? "bg-[#964A26] text-white"
                 : "bg-transparent text-[#333]"
@@ -186,7 +186,7 @@ const GoldPlans = () => {
 
       <div className="container max-md:!p-0">
         {/* Content */}
-        <div className="text-center text-2xl px-4 !text-[#964A26] uppercase balthazar font-semibold mb-4">
+        <div className="text-center text-2xl px-4 !text-[#964A26] uppercase  font-semibold mb-4">
           {currentPlan.heading}
         </div>
 

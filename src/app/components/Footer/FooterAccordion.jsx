@@ -7,7 +7,7 @@ export const FooterAccordion = ({ title, children }) => {
   return (
     <div className="pb-2">
       <div
-        className="balthazar text-lg uppercase font-medium text-black flex justify-between items-center lg:cursor-default cursor-pointer lg:pointer-events-none"
+        className=" text-lg uppercase font-medium text-black flex justify-between items-center lg:cursor-default cursor-pointer lg:pointer-events-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         {title}

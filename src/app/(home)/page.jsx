@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Footer from "./components/Footer/Footer";
 import Link from "next/link";
-import Header from "./components/Header";
+import Header from "../components/Header";
+import Footer from "../components/Footer/Footer";
 
 export const metadata = {
   title: "JewelOne | Finest Gold & Diamond Jewellery Store",
@@ -198,7 +198,7 @@ export default function Home() {
                         ₹ 52,000.00
                       </div>
                     </div>
-                    <div className="balthazar text-sm uppercase text-black tracking-wide truncate lg:text-base">
+                    <div className=" text-sm uppercase text-black tracking-wide truncate lg:text-base">
                       Parambariya Collections
                     </div>
                   </div>
@@ -290,7 +290,7 @@ export default function Home() {
                         ₹ 38,000.00
                       </div>
                     </div>
-                    <div className="balthazar text-sm uppercase text-black tracking-wide truncate lg:text-base">
+                    <div className=" text-sm uppercase text-black tracking-wide truncate lg:text-base">
                       Platinum Studded rings
                     </div>
                   </div>
@@ -382,7 +382,7 @@ export default function Home() {
                         ₹ 2,10,999.00
                       </div>
                     </div>
-                    <div className="balthazar text-sm uppercase text-black tracking-wide truncate lg:text-base">
+                    <div className=" text-sm uppercase text-black tracking-wide truncate lg:text-base">
                       venketeswara Temple set
                     </div>
                   </div>
@@ -474,7 +474,7 @@ export default function Home() {
                         ₹ 26,999.00
                       </div>
                     </div>
-                    <div className="balthazar text-sm uppercase text-black tracking-wide truncate lg:text-base">
+                    <div className=" text-sm uppercase text-black tracking-wide truncate lg:text-base">
                       antique bangle set
                     </div>
                   </div>

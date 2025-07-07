@@ -4,22 +4,22 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { BsChevronDown } from "react-icons/bs";
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showBrands, setShowBrands] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
-
   useEffect(() => {
     if (isOpen) {
-      document.body.classList.add('menu-open');
+      document.body.classList.add("menu-open");
     } else {
-      document.body.classList.remove('menu-open');
+      document.body.classList.remove("menu-open");
     }
   }, [isOpen]);
-  
 
   return (
     <>
@@ -55,7 +55,7 @@ const MobileMenu = () => {
 
       {/* Side Panel */}
       <div
-        className={`fixed top-0 left-0 h-full w-full max-w-md bg-white !z-50 border border-[#DBDBDB] shadow-sm transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 h-full min-h-dvh w-full max-w-md bg-white !z-50 border border-[#DBDBDB] shadow-sm transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -89,43 +89,69 @@ const MobileMenu = () => {
         </div>
 
         {/* Links */}
-        <nav className="flex flex-col gap-3 px-4 py-6 text-lg font-medium">
+        <nav className="flex flex-col gap-2 px-4 py-6 text-lg font-medium divide-y divide-gray-200">
+      {/* Main Links */}
+      {[
+        { href: "/our-story", label: "Our Story" },
+        { href: "/collections", label: "Collections" },
+        { href: "/swarna-sakthi", label: "SS - Gold Scheme" },
+        { href: "/careers", label: "Careers" },
+      ].map(({ href, label }) => (
+        <Link
+          key={href}
+          href={href}
+          onClick={closeMenu}
+          className="!text-black hover:!text-[#964A26] uppercase !no-underline flex justify-between items-center pb-2"
+        >
+          <span>{label}</span>
+          <BsChevronDown className="text-base" />
+        </Link>
+      ))}
+
+      <div className="pb-2">
+        {/* Our Brands */}
+      <button
+        onClick={() => setShowBrands(!showBrands)}
+        className={`${showBrands ? "!text-[#964A26]" : ""} text-black hover:!text-[#964A26] !uppercase !no-underline !flex !justify-between !w-full items-center`}
+      >
+        <span>Our Brands</span>
+        <BsChevronDown
+          className={`transform transition-transform duration-300 ${
+            showBrands ? "rotate-180" : ""
+          }`}
+        />
+      </button>
+
+      {showBrands && (
+        <div className="pl-4 flex flex-col gap-2 pt-2">
           <Link
-            href="/our-story"
+            href="/zilara"
             onClick={closeMenu}
-            className="balthazar !text-black hover:!text-[#964A26] uppercase !no-underline"
+            className="!text-black hover:!text-[#964A26] uppercase !no-underline pb-1"
           >
-            Our Story
+            Zilara
           </Link>
           <Link
-            href="/collections"
+            href="/florencia"
             onClick={closeMenu}
-            className="balthazar !text-black hover:!text-[#964A26] uppercase !no-underline"
+            className="!text-black hover:!text-[#964A26] uppercase !no-underline pb-1"
           >
-            Collections
+            Florencia
           </Link>
-          <Link
-            href="/swarna-sakthi"
-            onClick={closeMenu}
-            className="balthazar !text-black hover:!text-[#964A26] uppercase !no-underline"
-          >
-            SS - Gold Scheme
-          </Link>
-          <Link
-            href="/careers"
-            onClick={closeMenu}
-            className="balthazar !text-black hover:!text-[#964A26] uppercase !no-underline"
-          >
-            Careers
-          </Link>
-          <Link
-            href="/contact-us"
-            onClick={closeMenu}
-            className="balthazar !text-black hover:!text-[#964A26] uppercase !no-underline"
-          >
-            Contact Us
-          </Link>
-        </nav>
+        </div>
+      )}
+      </div>
+
+      {/* Contact Us */}
+      <Link
+        href="/contact-us"
+        onClick={closeMenu}
+        className="!text-black hover:!text-[#964A26] uppercase !no-underline flex justify-between items-center py-2"
+      >
+        <span>Contact Us</span>
+        <BsChevronDown className="text-base" />
+      </Link>
+    </nav>
       </div>
     </>
   );

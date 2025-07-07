@@ -1,20 +1,20 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import MobileMenu from './MobileMenu'
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import MobileMenu from "./MobileMenu";
 
 const Header = ({ params }) => {
-    const bg = params?.bg || 'bg-white'; // Fallback to 'bg-white' if not provided
-    return (
-      <>
-        <section className="bg-[#964A26] py-2 text-sm md:text-base">
+  const bg = params?.bg || "bg-white"; // Fallback to 'bg-white' if not provided
+  return (
+    <>
+      <section className="bg-[#964A26] py-2 text-sm md:text-base">
         <div className="container">
           <div className="text-[#F2EDE4] text-center">
             50% OFF on Making Charges on Silver Jewellery!
           </div>
         </div>
       </section>
-            <header className={`${bg} shadow-sm sticky top-0`}>
+      <header className={`${bg} shadow-sm sticky top-0 z-10`}>
         <div className="container">
           <div className="xl:hidden">
             <div className="grid grid-cols-3 py-2 items-center ">
@@ -46,7 +46,7 @@ const Header = ({ params }) => {
                     />
                   </svg>
                 </button> */}
-                <MobileMenu/>
+                <MobileMenu />
               </div>
               <div className="flex justify-center items-center">
                 <Link href={"/"}>
@@ -179,31 +179,31 @@ const Header = ({ params }) => {
 
                 <nav className="flex gap-4">
                   <Link
-                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] balthazar"
+                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] "
                     href="#"
                   >
                     our story
                   </Link>
                   <Link
-                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] balthazar"
+                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] "
                     href="#"
                   >
                     Collections
                   </Link>
                   <Link
-                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] balthazar"
+                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] "
                     href="/swarna-sakthi"
                   >
                     SS - Gold Scheme
                   </Link>
                   <Link
-                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] balthazar"
+                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] "
                     href="/careers"
                   >
                     Careers
                   </Link>
                   <Link
-                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] balthazar"
+                    className="text-black !no-underline text-lg uppercase hover:!text-[#964A26] "
                     href="/contact-us"
                   >
                     contact us
@@ -211,17 +211,15 @@ const Header = ({ params }) => {
                 </nav>
               </div>
               <div className="flex items-center justify-end gap-3">
-                <div className="text-black balthazar uppercase text-lg">
-                  our brands
-                </div>
+                <div className="text-black  uppercase text-lg">our brands</div>
                 <Link
-                  className="text-black !no-underline uppercase text-lg border border-black rounded-xs px-3 py-1 hover:bg-[#AD5389] balthazar hover:!border-[#AD5389] hover:!text-white"
+                  className="text-black !no-underline uppercase text-lg border border-black rounded-xs px-3 py-1 hover:bg-[#AD5389]  hover:!border-[#AD5389] hover:!text-white"
                   href="/zilara"
                 >
                   Zilara
                 </Link>
                 <Link
-                  className="text-black !no-underline uppercase text-lg border border-black rounded-xs px-3 py-1 hover:bg-[#AD5389] balthazar hover:!border-[#AD5389] hover:!text-white"
+                  className="text-black !no-underline uppercase text-lg border border-black rounded-xs px-3 py-1 hover:bg-[#AD5389]  hover:!border-[#AD5389] hover:!text-white"
                   href="/florencia"
                 >
                   Florencia
@@ -331,7 +329,7 @@ const Header = ({ params }) => {
         </div>
       </header>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
