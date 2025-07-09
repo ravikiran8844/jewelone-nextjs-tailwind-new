@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/NavBar/NavBar";
 import Footer from "../components/Footer/Footer";
 import CareersPageSection2 from "./CareersPageSection2";
 import CareersPageSection1 from "./CareersPageSection1";

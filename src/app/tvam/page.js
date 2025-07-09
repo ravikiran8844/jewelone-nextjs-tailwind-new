@@ -1,6 +1,5 @@
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header";
-import Navbar from "../components/NavBar/NavBar";
 import BrideGrid from "../components/TVAM/BrideGrid";
 import ImageBanner from "../components/TVAM/ImageBanner";
 import ImageCarousel from "../components/TVAM/ImageCarousel";

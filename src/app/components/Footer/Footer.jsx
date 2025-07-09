@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FooterAccordion } from "./FooterAccordion";
+import NewsletterForm from "./NewsletterForm";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -22,22 +23,7 @@ const Footer = () => {
               Subscribe to email alerts. We promise not to spam your inbox.
             </div>
             <div>
-              <form>
-                <div className="flex w-full max-w-sm items-center">
-                  <input
-                    className="flex-1 border border-[#D4D4D4] bg-white p-2 text-gray-700 placeholder-gray-400 focus:border-transparent focus:outline-none focus:ring-0"
-                    type="email"
-                    placeholder="Email Address*"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="inline-flex items-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white !uppercase"
-                  >
-                    Subscribe
-                  </button>
-                </div>
-              </form>
+             <NewsletterForm/>
             </div>
           </div>
 
